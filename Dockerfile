@@ -1,0 +1,9 @@
+FROM strategy/some-mysql:5.7
+
+ADD ./users.sql /
+
+ENV MYSQL_ROOT_PASSWORD 123456
+
+EXPOSE 3306 33060
+
+USER 1001

@@ -3,6 +3,7 @@ FROM strategy/some-mysql:5.7
 ADD ./users.sql /
 
 ENV MYSQL_ROOT_PASSWORD 123456
+ENV DATABASE_SVC tododb
 
 EXPOSE 3306 33060
 
